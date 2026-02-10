@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boost Marine — профессиональный ремонт яхт, катеров и гидроциклов</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="assets/logo2.png">
+</head>
+<body>
+  
+  <!-- ШАПКА -->
+  <header class="header glass-header">
+    <div class="container">
+      <div class="header__inner">
+        <a href="#" class="logo">
+          <img src="./assets/logo2.png" alt="Boost Marine" class="logo__img">
+          <div class="logo__text">
+            <span class="logo__top">BOOST</span>
+            <span class="logo__bottom">MARINE</span>
+          </div>
+        </a>
+        
+        <nav class="header-nav">
+          <a href="#works" class="nav__link">Работы</a>
+          <a href="#team" class="nav__link">Команда</a>
+          <a href="#contacts" class="nav__link">Контакты</a>
+          
+          <!-- Выпадающее меню Услуги -->
+          <div class="dropdown">
+            <a href="services.html" class="nav__link">Услуги <i class="fas fa-chevron-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="services.html#repair" class="dropdown-item">Ремонт и ТО</a>
+              <a href="services.html#upgrade" class="dropdown-item">Дооснащение</a>
+              <a href="services.html#diagnostics" class="dropdown-item">Диагностика</a>
+              <a href="services.html#purchase" class="dropdown-item">Помощь в покупке</a>
+              <a href="services.html#preservation" class="dropdown-item">Консервация</a>
+              <a href="services.html#jetski" class="dropdown-item">Гидроциклы</a>
+              <a href="services.html#other" class="dropdown-item">Другое</a>
+            </div>
+          </div>
+          
+          <a href="equipment.html" class="nav__link">Магазин</a>
+        </nav>
+        
+        <div class="header-contacts">
+          <div class="header-contacts__top">
+            <a href="tel:+7(977)714-05-09" class="header-phone">+7 (977) 714-05-09</a>
+            <div class="header-social-row">
+              <a href="https://wa.me/79777140509" class="header-social__link whatsapp" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              
+              <div class="telegram-dropdown">
+                <a href="#" class="header-social__link telegram" aria-label="Telegram">
+                  <i class="fab fa-telegram"></i>
+                </a>
+                <div class="telegram-dropdown__menu">
+                  <a href="https://t.me/boostmarinegroup" target="_blank" class="telegram-dropdown__link">
+                    <i class="fab fa-telegram"></i>
+                    Наши работы
+                  </a>
+                  <a href="https://t.me/BoostMarine" target="_blank" class="telegram-dropdown__link">
+                    <i class="fab fa-telegram"></i>
+                    Написать
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <span class="header-onsite">Выезд без ограничений</span>
+        </div>
+        
+        <div class="mobile-contact-btn" id="mobile-contact">
+          <button class="contact-toggle" aria-label="Показать контакты">
+            <i class="fas fa-phone"></i>
+          </button>
+          <div class="mobile-contact-dropdown">
+            <a href="tel:+79777140509" class="mobile-contact-link">
+              <i class="fas fa-phone"></i>
+              <span class="mobile-phone-number">+7 (977) 714-05-09</span>
+            </a>
+            <a href="https://t.me/boostmarinegroup" target="_blank" class="mobile-contact-link">
+              <i class="fab fa-telegram telegram-icon"></i>
+              Наши работы
+            </a>
+            <a href="https://t.me/BoostMarine" target="_blank" class="mobile-contact-link">
+              <i class="fab fa-telegram telegram-icon"></i>
+              Написать
+            </a>
+            <a href="https://wa.me/79777140509" target="_blank" class="mobile-contact-link">
+              <i class="fab fa-whatsapp whatsapp-icon"></i>
+              Написать
+            </a>
+          </div>
+        </div>
+        
+        <!-- БУРГЕР МЕНЮ -->
+        <div class="burger-wrapper" id="burger-wrapper">
+          <div class="burger" id="burger-btn">
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+            <div class="burger-line"></div>
+          </div>
+          <div class="burger-close" id="burger-close">
+            <div class="close-line"></div>
+            <div class="close-line"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- МОБИЛЬНОЕ МЕНЮ -->
+  <nav class="mobile-menu" id="mobile-nav">
+    <div class="mobile-menu__content">
+      <a href="#works" class="mobile-menu__link">Работы</a>
+      <a href="#team" class="mobile-menu__link">Команда</a>
+      <a href="#contacts" class="mobile-menu__link">Контакты</a>
+      
+      <!-- Раскрывающийся список Услуги для мобильной версии -->
+      <div class="mobile-dropdown">
+        <a href="#" class="mobile-menu__link mobile-menu__link--dropdown">
+          Услуги <i class="fas fa-chevron-down mobile-dropdown-icon"></i>
+        </a>
+        <div class="mobile-dropdown-menu">
+          <a href="services.html#repair" class="mobile-dropdown-item">Ремонт и ТО</a>
+          <a href="services.html#upgrade" class="mobile-dropdown-item">Дооснащение</a>
+          <a href="services.html#diagnostics" class="mobile-dropdown-item">Диагностика</a>
+          <a href="services.html#purchase" class="mobile-dropdown-item">Помощь в покупке</a>
+          <a href="services.html#preservation" class="mobile-dropdown-item">Консервация</a>
+          <a href="services.html#jetski" class="mobile-dropdown-item">Гидроциклы</a>
+          <a href="services.html#other" class="mobile-dropdown-item">Другое</a>
+        </div>
+      </div>
+      
+      <a href="equipment.html" class="mobile-menu__link">Магазин</a>
+    </div>
+  </nav>
+
+  <div class="menu-overlay" id="menu-overlay"></div>
+
+  <!-- ГЛАВНЫЙ ЭКРАН -->
+  <section class="hero">
+    <div class="hero__container">
+      <!-- Левая часть - УСЛУГИ -->
+      <div class="hero__half hero__half--yacht">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <!-- Кнопка "Все услуги" -->
+          <a href="services.html" class="hero__desktop-services-btn hero-glass-btn">
+            <span>Все услуги</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Правая часть - ОБОРУДОВАНИЕ -->
+      <div class="hero__half hero__half--jet">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <!-- Кнопка "Оборудование и запчасти" -->
+          <a href="equipment.html" class="hero__main-btn hero-glass-btn">
+            <span>Запчасти и оборудование</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="hero__scroll">
+      <span>Листайте вниз</span>
+      <i class="fas fa-chevron-down"></i>
+    </div>
+  </section>
+
+  <!-- НАШИ РАБОТЫ -->
+  <section id="works" class="works">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Наши работы</h2>
+      </div>
+      
+      <!-- ОБНОВЛЕННАЯ КАРУСЕЛЬ -->
+      <div class="works-carousel">
+        <div class="works-carousel__container">
+          <div class="works-carousel__track">
+            <!-- Работа 1 -->
+            <div class="works-carousel__slide" data-project="1">
+              <div class="work-card">
+                <div class="work-card__image">
+                  <img src="assets/фото_наших_работ.jpg" alt="Лодка Nord Star Patrol 36+">
+                  <div class="work-card__overlay work-card__overlay--top">
+                    <div class="work-card__details work-card__details--desktop">
+                      <div class="work-card__detail">
+                        <i class="fas fa-ship"></i>
+                        <span>Nord Star Patrol 36+</span>
+                      </div>
+                      <div class="work-card__detail">
+                        <i class="fas fa-tools"></i>
+                        <span>Установка видеонаблюдения</span>
+                      </div>
+                      <div class="work-card__detail">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>5 дней</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Кнопка внутри изображения -->
+                  <button class="work-card__view-btn">Смотреть <i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Работа 2 -->
+            <div class="works-carousel__slide" data-project="2">
+              <div class="work-card">
+                <div class="work-card__image">
+                  <img src="assets/фото_наших_работ1.jpg" alt="Гидроцикл Yamaha FZR 1800">
+                  <div class="work-card__overlay work-card__overlay--top">
+                    <div class="work-card__details work-card__details--desktop">
+                      <div class="work-card__detail">
+                        <i class="fas fa-ship"></i>
+                        <span>Yamaha FZR 1800</span>
+                      </div>
+                      <div class="work-card__detail">
+                        <i class="fas fa-tools"></i>
+                        <span>Капремонт двигателя</span>
+                      </div>
+                      <div class="work-card__detail">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>3 дня</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Кнопка внутри изображения -->
+                  <button class="work-card__view-btn">Смотреть <i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Работа 3 -->
+            <div class="works-carousel__slide" data-project="3">
+              <div class="work-card">
+                <div class="work-card__image">
+                  <img src="assets/фото_наших_работ3.jpg" alt="Гидроцикл BRP RXT 300">
+                  <div class="work-card__overlay work-card__overlay--top">
+                    <div class="work-card__details work-card__details--desktop">
+                      <div class="work-card__detail">
+                        <i class="fas fa-ship"></i>
+                        <span>BRP RXT 300</span>
+                      </div>
+                      <div class="work-card__detail">
+                        <i class="fas fa-tools"></i>
+                        <span>Ремонт двигателя и электроники</span>
+                      </div>
+                      <div class="work-card__detail">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>4 дней</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Кнопка внутри изображения -->
+                  <button class="work-card__view-btn">Смотреть <i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Работа 4 -->
+            <div class="works-carousel__slide" data-project="4">
+              <div class="work-card">
+                <div class="work-card__image">
+                  <img src="assets/фото_наших_работ4.jpg" alt="Сборка Victory A7">
+                  <div class="work-card__overlay work-card__overlay--top">
+                    <div class="work-card__details work-card__details--desktop">
+                      <div class="work-card__detail">
+                        <i class="fas fa-ship"></i>
+                        <span>Victory A7</span>
+                      </div>
+                      <div class="work-card__detail">
+                        <i class="fas fa-tools"></i>
+                        <span>Полная сборка и настройка</span>
+                      </div>
+                      <div class="work-card__detail">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>7 дней</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Кнопка внутри изображения -->
+                  <button class="work-card__view-btn">Смотреть <i class="fas fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Навигация карусели -->
+        <div class="works-carousel__nav">
+          <button class="works-carousel__prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          
+          <div class="works-carousel__dots">
+            <span class="works-carousel__dot active" data-slide="0"></span>
+            <span class="works-carousel__dot" data-slide="1"></span>
+            <span class="works-carousel__dot" data-slide="2"></span>
+            <span class="works-carousel__dot" data-slide="3"></span>
+          </div>
+          
+          <button class="works-carousel__next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+      
+      <div class="works-telegram-btn">
+        <a href="https://t.me/boostmarinegroup" target="_blank" class="btn btn-telegram">
+          <i class="fab fa-telegram"></i>
+          Больше наших работ в Telegram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- МОДАЛЬНОЕ ОКНО РАБОТ -->
+  <div class="work-modal" id="work-modal">
+    <div class="work-modal__overlay" id="work-modal-overlay"></div>
+    <div class="work-modal__content">
+      <button class="work-modal__close" id="work-modal-close" aria-label="Закрыть">
+        <i class="fas fa-times"></i>
+      </button>
+      
+      <div class="work-modal__header">
+        <!-- Изменено: вертикальное расположение характеристик -->
+        <div class="work-modal__details-vertical" id="work-modal-details">
+          <div class="work-modal__detail-item">
+            <div class="work-modal__detail-icon">
+              <i class="fas fa-ship"></i>
+            </div>
+            <div class="work-modal__detail-value" id="work-modal-vessel">Nord Star Patrol 36+</div>
+          </div>
+          <div class="work-modal__detail-item">
+            <div class="work-modal__detail-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <div class="work-modal__detail-value" id="work-modal-type">Установка видеонаблюдения</div>
+          </div>
+          <div class="work-modal__detail-item">
+            <div class="work-modal__detail-icon">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="work-modal__detail-value" id="work-modal-duration">5 дней</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="work-modal__gallery">
+        <!-- Основное фото -->
+        <div class="work-modal-main-image">
+          <img id="work-modal-main-img" src="" alt="Основное фото проекта">
+          <div class="work-modal-image-overlay">
+            <button class="work-modal-zoom-btn" id="work-modal-zoom">
+              <i class="fas fa-search-plus"></i>
+            </button>
+          </div>
+        </div>
+        
+        <!-- Миниатюры -->
+        <div class="work-modal-thumbnails" id="work-modal-thumbnails">
+          <!-- Миниатюры будут заполняться через JS -->
+        </div>
+      </div>
+      
+      <div class="work-modal__description">
+        <h4>Описание проекта</h4>
+        <p id="work-modal-desc">
+          Работы выполнялись по задаче повышения контроля и безопасности при управлении судном. Клиенту требовалось получить единое, наглядное и удобное решение для визуального контроля всех ключевых зон лодки, без разрозненных экранов и лишних приборов.
+        </p>
+        <ul id="work-modal-list">
+          <!-- Список работ будет заполняться через JS -->
+        </ul>
+        <h4>Результат</h4>
+        <p id="work-modal-result">
+          <!-- Результат будет заполняться через JS -->
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- КОМАНДА -->
+  <section id="team" class="team">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Команда</h2>
+      </div>
+      
+      <div class="team-grid">
+        <div class="team-member" data-member="1">
+          <div class="team-member__photo">
+            <img src="assets/Команда 1.png" alt="Миша - главный механик">
+          </div>
+        </div>
+        
+        <div class="team-member" data-member="2">
+          <div class="team-member__photo">
+            <img src="assets/команда 2.png" alt="Паша - электронщик">
+          </div>
+        </div>
+        
+        <div class="team-member" data-member="3">
+          <div class="team-member__photo">
+            <img src="assets/Команда 3.png" alt="Гоша - моторист">
+          </div>
+        </div>
+        
+        <div class="team-member" data-member="4">
+          <div class="team-member__photo">
+            <img src="assets/Команда 4.png" alt="Антон - кузовщик">
+          </div>
+        </div>
+
+        <div class="team-member" data-member="5">
+          <div class="team-member__photo">
+            <img src="assets/Команда 5.png" alt="Сергей - диагност">
+          </div>
+        </div>
+        
+        <div class="team-member" data-member="6">
+          <div class="team-member__photo">
+            <img src="assets/Команда 6.png" alt="Алексей - сборщик">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- МОДАЛЬНОЕ ОКНО КОМАНДЫ -->
+  <div class="team-modal" id="team-modal">
+    <div class="team-modal__overlay" id="team-modal-overlay"></div>
+    <div class="team-modal__content">
+      <button class="team-modal__close" id="team-modal-close" aria-label="Закрыть">
+        <i class="fas fa-times"></i>
+      </button>
+      <img src="" alt="Фото сотрудника" class="team-modal__img" id="team-modal-img">
+    </div>
+  </div>
+
+  <!-- УСЛУГИ (ИНТЕГРИРОВАННЫЕ КАРТОЧКИ) -->
+  <section id="services" class="services-cards-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Услуги</h2>
+      </div>
+      
+      <div class="services-grid-cards">
+        <!-- 1. Ремонт и ТО -->
+        <a class="card square" href="services.html#repair">
+          <video autoplay muted loop playsinline src="./assets/6180cd317a57c3734ac68ee3ad7b1378_720w.mp4"></video>
+          <div class="card-content">
+            <div>
+              <div class="title">Ремонт и ТО</div>
+              <div class="desc">Полный цикл обслуживания. Плановые работы и ремонт любой сложности. Цена согласуется заранее и не растет в процессе.</div>
+            </div>
+            <div class="card-action">
+              <span class="details-btn">Перечень работ</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 2. Дооснащение -->
+        <a class="card square" href="services.html#upgrade">
+          <video autoplay muted loop playsinline src="./assets/d78b943f9993789143a0c51b61a4b534.mp4"></video>
+          <div class="card-content">
+            <div>
+              <div class="title">Дооснащение</div>
+              <div class="desc">Установка навигации, электрики и климата. Интеграция систем в единую логику с понятной схемой обслуживания.</div>
+            </div>
+            <div class="card-action">
+              <span class="details-btn">Перечень работ</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 3. Диагностика -->
+        <a class="card square" href="services.html#diagnostics">
+          <video autoplay muted loop playsinline src="./assets/77f2896714b755eaa073617d3dc49103_720w.mp4"></video>
+          <div class="card-content">
+            <div>
+              <div class="title">Диагностика</div>
+              <div class="desc">Комплексная проверка узлов и систем. Поиск скрытых неисправностей и понятный план работ с приоритетами.</div>
+            </div>
+            <div class="card-action">
+              <span class="details-btn">Перечень работ</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 4. Помощь в подборе -->
+        <a class="card square" href="services.html#purchase">
+          <video autoplay muted loop playsinline src="./assets/621124cda8e9347893c8931839158cf6_t4 (1).mp4"></video>
+          <div class="card-content">
+            <div>
+              <div class="title">Помощь в подборе</div>
+              <div class="desc">Технический осмотр перед покупкой. Помогаем принять взвешенное решение и найти риски до передачи денег.</div>
+            </div>
+            <div class="card-action">
+              <span class="details-btn">Перечень работ</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 5. Консервация -->
+        <a class="card square" href="services.html#preservation">
+          <video autoplay muted loop playsinline src="./assets/cd004ab619e69600136fc684a5df6e96_720w.mp4"></video>
+          <div class="card-content">
+            <div>
+              <div class="title">Консервация</div>
+              <div class="desc">Подготовка к хранению и консервация систем. Обеспечиваем сохранность ресурса и предсказуемый ввод в сезон.</div>
+            </div>
+            <div class="card-action">
+              <span class="details-btn">Перечень работ</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 6. Ремонт гидроциклов -->
+        <a class="card square" href="services.html#jetski">
+          <video autoplay muted loop playsinline src="./assets/32097df690f05db3dd46b48ca7501748_720w.mp4"></video>
+          <div class="card-content">
+            <div>
+              <div class="title">Ремонт гидроциклов</div>
+              <div class="desc">Диагностика и ремонт любой сложности. Работаем по тем же высоким стандартам, что и с премиальными яхтами.</div>
+            </div>
+            <div class="card-action">
+              <span class="details-btn">Перечень работ</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 7. Иные услуги -->
+        <a class="card card-other" href="services.html#other">
+          <video src="./assets/18cb0854519fa578ab2fe6cdab89fdcc (1).mp4" autoplay muted loop playsinline></video>
+          <div class="card-content">
+            <div>
+              <div class="title">Иные услуги</div>
+              <div class="desc">
+                Нестандартные технические задачи за пределами регламентных работ.
+                Адаптация систем, исправление чужих ошибок, демонтаж и установка
+                оборудования с прогнозируемым результатом.
+              </div>
+            </div>
+            <div class="card-action">
+              <span class="details-btn">Перечень работ</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 8. Оборудование и запчасти -->
+        <a class="card card-equipment" href="equipment.html">
+          <img src="./assets/services/Оборудование,_запчасти_и_комплектующие.png" alt="Оборудование и запчасти">
+          <div class="card-overlay-dark"></div>
+          <div class="card-content">
+            <div>
+              <div class="title">Оборудование и запчасти</div>
+            </div>
+            <div class="card-action">
+              <span class="details-btn">Перейти в Магазин</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ВЫЕЗДНАЯ РАБОТА -->
+  <section id="onsite" class="onsite">
+    <div class="onsite__bg"></div>
+    <div class="onsite__overlay"></div>
+    
+    <div class="container">
+      <div class="onsite__content">
+        <h2 class="onsite__title">ВЫЕЗДНОЙ СЕРВИС</h2>
+        <div class="onsite__text">
+          <p class="onsite__description">Мы приезжаем туда, где находится ваша техника. Оперативный выезд инженеров для диагностики, ремонта и обслуживания яхт, катеров или гидроциклов: в марине, в порту или прямо на воде.</p>
+          
+          <div class="onsite__features">
+            <div class="onsite-feature" data-touch="false">
+              <i class="fas fa-clock onsite-feature__icon"></i>
+              <div class="onsite-feature__content">
+                <h4>ОПЕРАТИВНОСТЬ</h4>
+                <p>Выезд специалиста в течение 2-х часов для решения экстренных задач.</p>
+              </div>
+            </div>
+            
+            <div class="onsite-feature" data-touch="false">
+              <i class="fas fa-map-marker-alt onsite-feature__icon"></i>
+              <div class="onsite-feature__content">
+                <h4>ЛЮБАЯ ЛОКАЦИЯ</h4>
+                <p>Работаем по всей стране и за рубежом. Готовы к выезду в любую точку мира по вашему запросу.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТАКТЫ -->
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Контакты</h2>
+      </div>
+      
+      <div class="contacts-grid">
+        <div class="contacts-info">
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-item__content">
+              <h4>Адрес</h4>
+              <p>Яхт клуб Водник, г.Долгопрудный<br>улица Набережная 24</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-item__icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-item__content">
+              <h4>Телефон</h4>
+              <a href="tel:+7(977)714-05-09">+7 (977) 714-05-09</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contacts-map">
+          <div class="map-container">
+            <div id="yandex-map"></div>
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A04702d32f399f4b40b65f0148e51df1e78c4c1c836753e266fa07c0a3d57929e&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ФУТЕР -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div class="footer__logo">
+          <a href="#" class="logo">
+            <img src="assets/logo2.png" alt="Boost Marine" class="logo__img">
+            <div class="logo__text">
+              <span class="logo__top">BOOST</span>
+              <span class="logo__bottom">MARINE</span>
+            </div>
+          </a>
+          <p class="footer__tagline">Ремонт водной техники любой сложности</p>
+        </div>
+        
+        <div class="footer__nav">
+          <h4 class="footer__title">Навигация</h4>
+          <a href="#works" class="footer__link">Работы</a>
+          <a href="#team" class="footer__link">Команда</a>
+          <a href="#contacts" class="footer__link">Контакты</a>
+          <a href="services.html" class="footer__link">Услуги</a>
+          <a href="equipment.html" class="footer__link">Магазин</a>
+        </div>
+        
+        <div class="footer__services">
+          <h4 class="footer__title">Контакты</h4>
+          <a href="tel:+79777140509" class="footer__link">+7 (977) 714-05-09</a>
+          
+          <div class="footer__social">
+            <a href="https://t.me/boostmarine" class="social-icon telegram" target="_blank">
+              <i class="fab fa-telegram"></i>
+            </a>
+            <a href="https://wa.me/79777140509" class="social-icon whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 Boost Marine. Все права защищены.</p>
+        <p class="footer__note">Выезд без ограничений по региону</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
